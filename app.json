@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "WeatherAppFinale",
-    "slug": "WeatherAppFinale",
+    "slug": "weatherappfinale",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ginoongflores.weatherappfinale"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6d581562-89b8-492b-bc04-6b5a0108397d"
+      }
+    },
+    "owner": "ginoongflores"
   }
 }
