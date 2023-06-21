@@ -34,6 +34,12 @@
         "projectId": "6d581562-89b8-492b-bc04-6b5a0108397d"
       }
     },
-    "owner": "ginoongflores"
+    "owner": "ginoongflores",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/6d581562-89b8-492b-bc04-6b5a0108397d"
+    }
   }
 }
