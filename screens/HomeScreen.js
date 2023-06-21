@@ -32,7 +32,7 @@ const HomeScreen = () => {
     setLoading(true); // set loading to true when the data is not yet fetched
     fetchWeatherForecast({
       cityName: location.name,
-      days: "7",
+      days: "14",
     }).then((data) => {
       setWeather(data);
       setLoading(false); // set loading to false when the data is fetched
@@ -63,7 +63,7 @@ const HomeScreen = () => {
 
     fetchWeatherForecast({
       cityName,
-      days: "7",
+      days: "14",
     }).then((data) => {
       setWeather(data);
       setLoading(false); // set loading to false when the data is fetched
@@ -81,7 +81,7 @@ const HomeScreen = () => {
       <StatusBar style={"light"} />
       <Image
         blurRadius={70}
-        source={require("../assets/images/bg.png")}
+        source={require("../assets/images/rounded_bg.png")}
         className={"absolute w-full h-full"}
       />
 
@@ -160,9 +160,9 @@ const HomeScreen = () => {
               {/*  location */}
               <Text className={"text-white text-center text-2xl font-bold"}>
                 {location?.name},
-                <Text className={"text-lg font-semibold text-gray-300"}>
-                  {" " + location?.country}
-                </Text>
+              </Text>
+              <Text className={"text-2xl text-center font-semibold text-gray-300"}>
+                {location?.country}
               </Text>
               {/*  weather image */}
               <View className={"flex-row justify-center"}>
@@ -171,11 +171,12 @@ const HomeScreen = () => {
                   className={"w-52 h-52"}
                 />
               </View>
+
               {/*  degree celsius */}
               <View className={"space-y-2"}>
                 <Text
                   className={
-                    "text-center font-bold text-white text-6xl ml-5"
+                    "text-center font-bold text-white text-6xl ml-5 pt-1"
                   }
                 >
                   {current?.temp_c}&#176;
@@ -186,6 +187,7 @@ const HomeScreen = () => {
                   {current?.condition?.text}
                 </Text>
               </View>
+
               {/* other stats */}
               <View className={"flex-row justify-between mx-4"}>
                 <View className={"flex-row space-x-2 items-center"}>
@@ -221,10 +223,10 @@ const HomeScreen = () => {
             </View>
 
             {/*  forecast for next days */}
-            <View className={"mb-2 space-y-3"}>
+            <View className={"mb-2 space-y-3 pt-5"}>
               <View className={"flex-row items-center mx-5 space-x-2"}>
                 <CalendarDaysIcon size={22} color={"white"} />
-                <Text className={"text-white text-base"}>Daily forecast</Text>
+                <Text className={"text-white text-base"}>14-Days forecast</Text>
               </View>
 
               <ScrollView
