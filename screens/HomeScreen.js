@@ -226,7 +226,7 @@ const HomeScreen = () => {
             <View className={"mb-2 space-y-3 pt-5"}>
               <View className={"flex-row items-center mx-5 space-x-2"}>
                 <CalendarDaysIcon size={22} color={"white"} />
-                <Text className={"text-white text-base"}>14-Days forecast</Text>
+                <Text className={"text-white text-base"}>14-Day forecast</Text>
               </View>
 
               <ScrollView
