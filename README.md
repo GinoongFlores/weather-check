@@ -32,3 +32,8 @@ eas build -p android --latest
 
 ## For more updated information
 *Visit Expo Docs at https://docs.expo.dev*
+
+<hr>
+
+*The project was inspired by this repo: https://github.com/syednomishah/Weather-App-React-Native*
+
